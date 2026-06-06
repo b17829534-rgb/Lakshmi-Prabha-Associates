@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="TaxPro - Your trusted partner for comprehensive tax, accounting, and business consulting services. Over 15 years of excellence in tax consulting, accounting, and business advisory services."
+    />
+    <title>Contact - Lakshmi Prabha Associates</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="favicon" href="assests/favicon/ChatGPT Image Jun 3, 2026, 02_59_33 PM.png">
+  </head>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".timeline-item");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    items.forEach(item => observer.observe(item));
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links1");
+  const navbar = document.querySelector(".main-navbar1");
+
+  if (!toggleBtn || !navLinks || !navbar) return;
+
+  // Toggle button
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    toggleBtn.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+    toggleBtn.setAttribute("aria-expanded", !expanded);
+  });
+
+  // Click outside to close
+  document.addEventListener("click", (e) => {
+    if (!navbar.contains(e.target)) {
+      navLinks.classList.remove("active");
+      toggleBtn.classList.remove("active");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  // Close on link click
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      toggleBtn.classList.remove("active");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+</script>
+
+
+  <body>
+    <main class="contact-page">
+        
+       <nav class="main-navbar1" aria-label="Main navigation">
+  <div class="nav-container1">
+
+    <!-- Logo (optional but recommended) -->
+    <a href="index.html" class="logo">Brand</a>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="nav-links1">
+      <a href="index.html" class="nav-link">Home</a>
+
+      <a href="about.html" class="nav-link">About Us</a>
+
+      <a href="services.html" class="nav-link">Services</a>
+
+      <a href="contact.html" class="nav-link">Contact</a>
+
+      <a href="contact.html" class="cta-btn">Get Free Consultation</a>
+    </div>
+
+  </div>
+</nav>
+      <!-- Header Section -->
+      <header class="contact-sections">
+  <div class="contact-badge">
+    <span class="contact-badge-text">Contact Us</span>
+  </div>
+
+  <h1 class="contact-title">
+    Let's Start a <span class="contact-highlight">Conversation</span>
+  </h1>
+
+  <p class="contact-subtitle">
+    Get in touch with our expert team for a free consultation on your business needs.
+  </p>
+</header>
+
+        
+        
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- Left Info -->
+    <div class="contact-info reveal">
+      <h2>Get in Touch</h2>
+      <p class="subtitle">
+        Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+      </p>
+
+      <ul class="info-list">
+        <li>
+          <span class="icon"><svg width="24" height="24" fill="currentColor"
+       viewBox="0 0 24 24">
+    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2
+             a1 1 0 0 1 1.01-.24
+             11.36 11.36 0 0 0 3.56.57
+             a1 1 0 0 1 1 1V20
+             a1 1 0 0 1-1 1
+             C10.3 21 3 13.7 3 4
+             a1 1 0 0 1 1-1h3.5
+             a1 1 0 0 1 1 1
+             11.36 11.36 0 0 0 .57 3.56
+             a1 1 0 0 1-.24 1.01l-2.2 2.22z"/>
+  </svg><i class="fa-solid fa-phone"></i></span>
+          <div>
+            <strong>Phone</strong>
+            <p>+91 98765 43210</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg"
+       width="24" height="24"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round">
+    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4
+             a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+  </svg><i class="fa-solid fa-envelope"></i></span>
+          <div>
+            <strong>Email</strong>
+            <p>info@taxpro.com</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon"> <svg width="20" height="20" fill="currentColor"
+       viewBox="0 0 24 24">
+    <path d="M12 2a8 8 0 0 0-8 8
+             c0 5.25 8 12 8 12
+             s8-6.75 8-12
+             a8 8 0 0 0-8-8zm0 11
+             a3 3 0 1 1 0-6
+             a3 3 0 0 1 0 6z"/>
+  </svg><i class="fa-solid fa-location-dot"></i></span>
+          <div>
+            <strong>Address</strong>
+            <p>123 Business Center, Anna Nagar, Chennai - 600040</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="icon"><svg width="20" height="20" fill="currentColor"
+       viewBox="0 0 24 24">
+    <path d="M12 2a10 10 0 1 0 10 10
+             A10 10 0 0 0 12 2zm1 11
+             3 2-.75 1.23L11 13V6h2v7z"/>
+  </svg><i class="fa-solid fa-clock"></i></span>
+          <div>
+            <strong>Working Hours</strong>
+            <p>Mon - Sat : 9:00 AM - 6:00 PM</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Form -->
+    <div class="contact-form reveal">
+      <h3>
+        <span class="form-icon"> <svg width="24" height="24" fill="currentColor"
+       viewBox="0 0 24 24">
+    <path d="M2.01 9.25L21.7 2.01
+             c.86-.32 1.63.45 1.31 1.31
+             L15.77 21.99
+             c-.3.84-1.46.87-1.82.08
+             l-3.02-6.15-6.15-3.02
+             c-.78-.36-.75-1.52.08-1.82z"/>
+  </svg><i class="fa-solid fa-message"></i></span>
+        Send us a Message
+      </h3>
+      <p class="form-sub">Fill out the form and we'll get back to you within 24 hours.</p>
+
+      <form>
+        <div class="grid">
+          <input type="text" placeholder="Full Name *" required>
+          <input type="email" placeholder="Email Address *" required>
+          <input type="tel" placeholder="Phone Number *" required>
+          <select required>
+            <option value="">Select a service</option>
+            <option>GST Filing</option>
+            <option>Income Tax</option>
+            <option>Company Registration</option>
+            <option>Trademark</option>
+          </select>
+        </div>
+
+        <textarea rows="4" placeholder="Tell us about your requirements..."></textarea>
+
+        <button type="submit">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+   <section class="card map reveal">
+      <div class="map">
+      <h3 class="maph">Find us</h3>
+      <p class="mapp">Visit our Office</p>
+      <div class="map__frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125432.38736747965!2d79.04904726376787!3d10.75280903879028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89cea453039%3A0xe113da9b1f632be6!2sThanjavur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1767866862791!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+ </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <section class="footer-section" aria-labelledby="footer-about-heading">
+            <h2 id="footer-about-heading" class="visually-hidden">Contact Us</h2>
+            <p>
+              Your trusted partner for comprehensive tax, accounting, and business consulting services. We help
+              businesses grow with expert financial guidance.
+            </p>
+            <div class="social-links">
+              <a href="#facebook" aria-label="Facebook">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-3.svg" alt="Facebook" />
+              </a>
+              <a href="#twitter" aria-label="Twitter">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link.svg" alt="Twitter" />
+              </a>
+              <a href="#linkedin" aria-label="LinkedIn">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-1.svg" alt="LinkedIn" />
+              </a>
+              <a href="#instagram" aria-label="Instagram">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-2.svg" alt="Instagram" />
+              </a>
+            </div>
+          </section>
+
+          <nav class="footer-section" aria-labelledby="footer-services-heading">
+            <h2 id="footer-services-heading">Our Services</h2>
+            <ul>
+              <li><a href="services.html">GST Services</a></li>
+              <li><a href="services.html">Income Tax Services</a></li>
+              <li><a href="services.html">Business Registration</a></li>
+              <li><a href="services.html">Accounting Services</a></li>
+              <li><a href="services.html">Audit Services</a></li>
+              <li><a href="services.html">Trademark Services</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-section" aria-labelledby="footer-quick-links-heading">
+            <h2 id="footer-quick-links-heading">Quick Links</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.htmls">Contact</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer-section" aria-labelledby="footer-contact-heading">
+            <h2 id="footer-contact-heading">Contact Us</h2>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-5.svg" alt="Address icon" />
+              <p>No,6A Co-operative Colony, Medical college road, Thanjavur</p>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-3.svg" alt="Phone icon" />
+              <a href="tel:+919677837328">+91 96778 37238</a>
+              <a href="tel:+917010808605">+91 70108 08605</a>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-4.svg" alt="Email icon" />
+              <a href="mailto:sam.gan3891@gmail.com">sam.gan3891@gmail.com</a>
+              <a href="mailto:lakshmiprabha1525@gmail.com">lakshmiprabha1525@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg.svg" alt="Hours icon" />
+              <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Branzyne. All rights reserved.</p>
+          <nav class="footer-links" aria-label="Legal links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+          </nav>
+        </div>
+      </footer>
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Lakshmi Prabha Assocaites - Our Services</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="favicon" href="assests/favicon/ChatGPT Image Jun 3, 2026, 02_59_33 PM.png">
+  </head>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links1");
+  const navbar = document.querySelector(".main-navbar1");
+
+  if (!toggleBtn || !navLinks || !navbar) return;
+
+  // Toggle button
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    toggleBtn.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+    toggleBtn.setAttribute("aria-expanded", !expanded);
+  });
+
+  // Click outside to close
+  document.addEventListener("click", (e) => {
+    if (!navbar.contains(e.target)) {
+      navLinks.classList.remove("active");
+      toggleBtn.classList.remove("active");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  // Close on link click
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      toggleBtn.classList.remove("active");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+</script>
+
+  <body>
+    <main class="service-page">
+     
+        <nav class="main-navbar1" aria-label="Main navigation">
+  <div class="nav-container1">
+
+    <!-- Logo (optional but recommended) -->
+    <a href="index.html" class="logo">Brand</a>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="nav-links1">
+      <a href="index.html" class="nav-link">Home</a>
+
+      <a href="about.html" class="nav-link">About Us</a>
+
+      <a href="services.html" class="nav-link">Services</a>
+
+      <a href="contact.html" class="nav-link">Contact</a>
+
+      <a href="contact.html" class="cta-btn">Get Free Consultation</a>
+    </div>
+
+  </div>
+</nav>
+
+       <header class="services-sections">
+  <div class="services-badge">
+    <span class="services-badge-text">Our Services</span>
+  </div>
+
+  <h1 class="services-title">
+    Comprehensive Business & <span class="services-highlight">Tax Solutions</span>
+  </h1>
+
+  <p class="services-subtitle">
+    From tax filing to business registration, we provide end-to-end services to help your<br />
+    business stay compliant and grow.
+  </p>
+</header>
+
+      
+      <div class="services-container">
+        
+        <!-- GST Services -->
+        <article class="gst-card">
+  <!-- LEFT CONTENT -->
+  <div class="gst-card-left">
+    <div class="gst-icon-wrap">
+      <img src="https://c.animaapp.com/mjtwrd8aX3JUco/img/overlay-4.svg" alt="GST Services">
+    </div>
+
+    <h2 class="gst-title">GST Services</h2>
+    <p class="gst-desc">
+      Complete GST solutions from registration to return filing and compliance management.
+    </p>
+
+    <a href="contact.html" class="gst-btn">
+      <span>Get Started</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </a>
+  </div>
+
+  <!-- RIGHT FEATURES -->
+  <div class="gst-card-right">
+    <h3 class="gst-features-title">What’s Included</h3>
+
+    <ul class="gst-feature-list">
+      <li>GST Registration</li>
+      <li>GST Return Filing (GSTR-1, GSTR-3B, Annual)</li>
+      <li>GST Reconciliation</li>
+      <li>GST Audit & Assessment</li>
+      <li>E-Way Bill Generation</li>
+      <li>Input Tax Credit Management</li>
+    </ul>
+  </div>
+</article>
+
+
+        <!-- Income Tax Services -->
+         <article class="gst-cards">
+  <!-- LEFT CONTENT -->
+   <div class="gst-cards-left">
+    <h3 class="gst-features-title">What’s Included</h3>
+
+    <ul class="gst-features-list">
+      <li>ITR Filing</li>
+      <li>Tax Planning & Advisory</li>
+      <li>TDS Compliance</li>
+      <li>Income Tax Audit</li>
+      <li>Notice Handling</li>
+      <li>NRI Taxation</li>
+    </ul>
+  </div>
+  <div class="gst-cards-right">
+    <div class="gst-icons-wrap">
+      <img src="https://c.animaapp.com/mjtwrd8aX3JUco/img/overlay-4.svg" alt="GST Services">
+    </div>
+
+    <h2 class="gst-titles">Income Tax Services</h2>
+    <p class="gst-descs">
+       We provide reliable and hassle-free income tax filing and compliance services for individuals and businesses.
+    </p>
+
+     <a href="contact.html" class="gst-btn">
+      <span>Get Started</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- RIGHT FEATURES -->
+  
+</article>
+
+        <!-- Business Registration Services -->
+         <article class="gst-card">
+  <!-- LEFT CONTENT -->
+  <div class="gst-card-left">
+    <div class="gst-icon-wrap">
+      <img src="https://c.animaapp.com/mjtwrd8aX3JUco/img/overlay-4.svg" alt="GST Services">
+    </div>
+
+    <h2 class="gst-title">Business Registration Services</h2>
+    <p class="gst-desc">
+      Our business registration services ensure quick, compliant, and hassle-free setup of your business.
+    </p>
+
+    <a href="contact.html" class="gst-btn">
+      <span>Get Started</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- RIGHT FEATURES -->
+  <div class="gst-card-right">
+    <h3 class="gst-features-title">What’s Included</h3>
+
+    <ul class="gst-feature-list">
+      <li>Company & LLP Registration</li>
+      <li>Proprietorship & Partnership</li>
+      <li>MSME & Startup Registration</li>
+      <li>FSSAI & IEC</li>
+      <li>NGO / Section 8 Company</li>
+      <li>DSC & Licenses</li>
+    </ul>
+  </div>
+</article>
+
+        <!-- Licensing & Compliance Services -->
+          <article class="gst-cards">
+  <!-- LEFT CONTENT -->
+   <div class="gst-cards-left">
+    <h3 class="gst-features-title">What’s Included</h3>
+
+    <ul class="gst-features-list">
+      <li>Business Licenses & Registrations</li>
+      <li>Labour Law Compliance</li>
+      <li>PF & ESI Services</li>
+      <li>Trade & Factory Licenses</li>
+      <li>ROC & Annual Compliance</li>
+      <li>IEC & MSME Services</li>
+    </ul>
+  </div>
+  <div class="gst-cards-right">
+    <div class="gst-icons-wrap">
+      <img src="https://c.animaapp.com/mjtwrd8aX3JUco/img/overlay-4.svg" alt="GST Services">
+    </div>
+
+    <h2 class="gst-titles">Licensing & Compliance Services</h2>
+    <p class="gst-descs">
+          We provide complete licensing and compliance services to ensure your business meets all statutory requirements.    </p>
+    <a href="contact.html" class="gst-btn">
+      <span>Get Started</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </a>
+  </div>
+  
+</article>
+        <!-- Trademark & IP Services -->
+         <article class="gst-card">
+  <!-- LEFT CONTENT -->
+  <div class="gst-card-left">
+    <div class="gst-icon-wrap">
+      <img src="https://c.animaapp.com/mjtwrd8aX3JUco/img/overlay-4.svg" alt="GST Services">
+    </div>
+
+    <h2 class="gst-title">Trademark & IP Services</h2>
+    <p class="gst-desc">
+Our trademark and IP services ensure secure registration and long-term protection of your intellectual assets.    </p>
+
+    <a href="contact.html" class="gst-btn">
+  <span>Get Started</span>
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <path d="M6 12L10 8L6 4"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+  </svg>
+</a>
+  </div>
+
+  <!-- RIGHT FEATURES -->
+  <div class="gst-card-right">
+    <h3 class="gst-features-title">What’s Included</h3>
+
+    <ul class="gst-feature-list">
+      <li>Trademark Registration & Renewal</li>
+      <li>Copyright & Patent Services</li>
+      <li>Design Registration</li>
+      <li>IP Litigation Support</li>
+      <li>Brand Protection</li>
+      <li>International IP Filing</li>
+    </ul>
+  </div>
+</article>
+
+        <!-- Accounting Services -->
+          <article class="gst-cards">
+  <!-- LEFT CONTENT -->
+   <div class="gst-cards-left">
+    <h3 class="gst-features-title">What’s Included</h3>
+
+    <ul class="gst-features-list">
+      <li>Bookkeeping & Finalization</li>
+      <li>Payroll & BRS</li>
+      <li>MIS & Financial Reports</li>
+      <li>GST & TDS Accounting</li>
+      <li>Cash Flow Management</li>
+      <li>Accounting Software Support</li>
+    </ul>
+  </div>
+  <div class="gst-cards-right">
+    <div class="gst-icons-wrap">
+      <img src="https://c.animaapp.com/mjtwrd8aX3JUco/img/overlay-4.svg" alt="GST Services">
+    </div>
+
+    <h2 class="gst-titles">Accounting Services</h2>
+    <p class="gst-descs">
+Our trademark and IP services ensure secure registration and long-term protection of your intellectual assets.    </p>
+
+    <a href="contact.html" class="gst-btn">
+      <span>Get Started</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+  
+</article>
+
+        <!-- Audit Services -->
+         <article class="gst-card">
+  <!-- LEFT CONTENT -->
+  <div class="gst-card-left">
+    <div class="gst-icon-wrap">
+      <img src="https://c.animaapp.com/mjtwrd8aX3JUco/img/overlay-4.svg" alt="GST Services">
+    </div>
+
+    <h2 class="gst-title">Audit Services</h2>
+    <p class="gst-desc">
+           Our audit services help businesses strengthen internal controls and maintain statutory compliance.    </p>
+
+    <a href="contact.html" class="gst-btn">
+      <span>Get Started</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- RIGHT FEATURES -->
+  <div class="gst-card-right">
+    <h3 class="gst-features-title">What’s Included</h3>
+
+    <ul class="gst-feature-list">
+      <li>Statutory & Tax Audit</li>
+      <li>Internal & GST Audit</li>
+      <li>Stock & Concurrent Audit</li>
+      <li>Forensic & Due Diligence</li>
+      <li>Management Audit</li>
+      <li>Compliance Review</li>
+    </ul>
+  </div>
+</article>
+      </div>
+
+      <!-- CTA Section -->
+      <section class="cta-sections">
+        <div class="cta-contents">
+          <h2 class="cta-titles">Need a Custom Solution?</h2>
+          <p class="cta-descriptions">Every business is unique. Contact us to discuss your specific requirements and get a tailored solution.</p>
+          
+          <a href="contact.html" class="cta-btn primary">
+            <span> Schedule Consultation</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+       </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <section class="footer-section" aria-labelledby="footer-about-heading">
+            <h2 id="footer-about-heading" class="visually-hidden">About TaxPro</h2>
+            <p>
+              Your trusted partner for comprehensive tax, accounting, and business consulting services. We help
+              businesses grow with expert financial guidance.
+            </p>
+            <div class="social-links">
+              <a href="#facebook" aria-label="Facebook">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-3.svg" alt="Facebook" />
+              </a>
+              <a href="#twitter" aria-label="Twitter">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link.svg" alt="Twitter" />
+              </a>
+              <a href="#linkedin" aria-label="LinkedIn">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-1.svg" alt="LinkedIn" />
+              </a>
+              <a href="#instagram" aria-label="Instagram">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-2.svg" alt="Instagram" />
+              </a>
+            </div>
+          </section>
+
+          <nav class="footer-section" aria-labelledby="footer-services-heading">
+            <h2 id="footer-services-heading">Our Services</h2>
+            <ul>
+              <li><a href="services.html">GST Services</a></li>
+              <li><a href="services.html">Income Tax Services</a></li>
+              <li><a href="services.html">Business Registration</a></li>
+              <li><a href="services.html">Accounting Services</a></li>
+              <li><a href="services.html">Audit Services</a></li>
+              <li><a href="services.html">Trademark Services</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-section" aria-labelledby="footer-quick-links-heading">
+            <h2 id="footer-quick-links-heading">Quick Links</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+           <address class="footer-section" aria-labelledby="footer-contact-heading">
+            <h2 id="footer-contact-heading">Contact Us</h2>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-5.svg" alt="Address icon" />
+              <p>123 Business Center, Anna Nagar, Chennai - 600040</p>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-3.svg" alt="Phone icon" />
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-4.svg" alt="Email icon" />
+              <a href="mailto:info@taxpro.com">info@taxpro.com</a>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg.svg" alt="Hours icon" />
+              <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Branzyne. All rights reserved.</p>
+          <nav class="footer-links" aria-label="Legal links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

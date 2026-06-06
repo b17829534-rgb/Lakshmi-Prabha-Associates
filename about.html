@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="TaxPro - Your trusted partner for comprehensive tax, accounting, and business consulting services. Over 15 years of excellence in tax consulting, accounting, and business advisory services."
+    />
+    <title>About Us - Lakshmi Prabha Associates</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="favicon" href="assests/favicon/ChatGPT Image Jun 3, 2026, 02_59_33 PM.png">
+  </head>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".timeline-item");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    items.forEach(item => observer.observe(item));
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links1");
+  const navbar = document.querySelector(".main-navbar1");
+
+  if (!toggleBtn || !navLinks || !navbar) return;
+
+  // Toggle button
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    toggleBtn.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+    toggleBtn.setAttribute("aria-expanded", !expanded);
+  });
+
+  // Click outside to close
+  document.addEventListener("click", (e) => {
+    if (!navbar.contains(e.target)) {
+      navLinks.classList.remove("active");
+      toggleBtn.classList.remove("active");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  // Close on link click
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      toggleBtn.classList.remove("active");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+</script>
+
+  <body>
+    <main class="about-us">
+        
+       <nav class="main-navbar1" aria-label="Main navigation">
+  <div class="nav-container1">
+
+    <!-- Logo (optional but recommended) -->
+    <a href="index.html" class="logo"></a>
+
+    <!-- Mobile Menu Toggle -->
+    <!-- <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button> -->
+
+    <!-- Navigation Links -->
+    <div class="nav-links1">
+      <a href="index.html" class="nav-link">Home</a>
+
+      <a href="about.html" class="nav-link">About Us</a>
+
+      <a href="services.html" class="nav-link">Services</a>
+
+      <a href="contact.html" class="nav-link">Contact</a>
+
+      <a href="contact.html" class="cta-btn">Get Free Consultation</a>
+    </div>
+
+  </div>
+</nav>
+
+
+      <!-- Header Section -->
+      <header class="contact-sections">
+  <div class="about-badge">
+    <p class="about-badge-text">About Us</p>
+  </div>
+
+  <h1 class="about-title">
+    Your Trusted Partner Since <span class="about-highlight">2008</span>
+  </h1>
+
+  <p class="about-subtitle">
+    Over 15 years of excellence in tax consulting, accounting, and business advisory services.
+  </p>
+</header>
+
+
+      <!-- Navigation -->
+      
+
+      <!-- Our Story Section -->
+      <section class="about-stats-container">
+  <!-- Left: Our Story -->
+  <div class="our-story">
+    <div class="frame-4">
+      <h2 id="our-story-heading" class="text-wrapper-7">Our Story</h2>
+    </div>
+    <h1 class="heading-building">Building Trust Through Excellence</h1>
+    <p class="founded-in">
+      Founded in 2008, TaxPro began with a simple mission: to simplify business compliance for Indian
+      entrepreneurs. What started as a small practice has grown into a comprehensive consulting firm serving
+      over 5000 clients across India.
+    </p>
+    <p class="our-team-of">
+      Our team of experienced Chartered Accountants and tax professionals brings together decades of expertise
+      in taxation, accounting, and business advisory. We understand the challenges faced by businesses and
+      provide tailored solutions that drive growth.
+    </p>
+    <p class="today-we-continue-to">
+      Today, we continue to uphold our commitment to excellence, integrity, and client satisfaction. Our
+      technology-driven approach ensures efficient service delivery while maintaining the personal touch that
+      sets us apart.
+    </p>
+  </div>
+
+  <!-- Right: Statistics -->
+  <div class="rightstats-container">
+    <article class="stat-card">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Years Experience</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number">25+</div>
+      <div class="stat-label">Team Members</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number">5000+</div>
+      <div class="stat-label">Happy Clients</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number">50K+</div>
+      <div class="stat-label">Fillings Done</div>
+    </article>
+  </div>
+</section>
+
+
+      <!-- Values Section -->
+      <section aria-labelledby="our-values-heading" class="our-values-section">
+  <div class="frame-5">
+    <h2 id="our-values-heading" class="text-wrapper-16">Our Values</h2>
+  </div>
+  <h3 class="heading-what">What Drives Us</h3>
+  <p class="p">
+    Our core values guide everything we do and how we serve our clients.
+  </p>
+
+  <div class="values-container">
+    <article class="value-card">
+      <img class="value-icon" src="https://c.animaapp.com/mjtncfhz5sZGrY/img/overlay-1.svg" alt="Excellence icon" />
+      <h4 class="value-title">Excellence</h4>
+      <p class="value-description">
+        We strive for excellence in every service we provide, ensuring the highest quality standards.
+      </p>
+    </article>
+
+    <article class="value-card">
+      <img class="value-icon" src="https://c.animaapp.com/mjtncfhz5sZGrY/img/overlay.svg" alt="Client-Centric icon" />
+      <h4 class="value-title">Client-Centric</h4>
+      <p class="value-description">
+        Your success is our priority. We work closely with you to understand and meet your needs.
+      </p>
+    </article>
+
+    <article class="value-card">
+      <img class="value-icon" src="https://c.animaapp.com/mjtncfhz5sZGrY/img/overlay-2.svg" alt="Integrity icon" />
+      <h4 class="value-title">Integrity</h4>
+      <p class="value-description">
+        We maintain the highest ethical standards and transparency in all our dealings.
+      </p>
+    </article>
+
+    <article class="value-card">
+      <img class="value-icon" src="https://c.animaapp.com/mjtncfhz5sZGrY/img/overlay-3.svg" alt="Commitment icon" />
+      <h4 class="value-title">Commitment</h4>
+      <p class="value-description">
+        We are committed to delivering timely solutions and building long-term relationships.
+      </p>
+    </article>
+  </div>
+</section>
+
+      <!-- Journey Section -->
+      <section aria-labelledby="our-journey-heading">
+        <div class="frame-6">
+          <h2 id="our-journey-heading" class="text-wrapper-17">Our Journey</h2>
+        </div>
+        <h3 class="heading-milestones">Milestones We're Proud Of</h3>
+
+        <div class="timeline-container">
+          <div class="vertical-divider" role="presentation"></div>
+
+          <article class="timeline-item">
+            <div class="timeline-badge">
+              <time datetime="2008">2008</time>
+            </div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Founded</h4>
+              <p class="timeline-description">Started with a vision to simplify business compliance</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-badge">
+              <time datetime="2012">2012</time>
+            </div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">500+ Clients</h4>
+              <p class="timeline-description">Reached our first major client milestone</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-badge">
+              <time datetime="2016">2016</time>
+            </div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Pan-India Expansion</h4>
+              <p class="timeline-description">Extended services across multiple states</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-badge">
+              <time datetime="2020">2020</time>
+            </div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Digital Transformation</h4>
+              <p class="timeline-description">Launched online consultation and filing services</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-badge">
+              <time datetime="2024">2024</time>
+            </div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">5000+ Clients</h4>
+              <p class="timeline-description">Trusted by businesses across India</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+       <section id="consultation" class="cta-section">
+  <div class="cta-container">
+
+    <!-- Background decoration -->
+    <span class="cta-bg"></span>
+
+    <!-- Content -->
+    <div class="cta-content">
+      <h2 class="call-head1">
+              Ready to <span class="highlight">Work With Us?</span>
+      </h2>
+      <p class="call-text">
+        Join thousands of businesses who trust us with their compliance needs.
+      </p>
+
+      <!-- CTA Actions -->
+      <div class="cta-actions">
+        <a href="contact.html" class="cta-btn primary">
+          <span>Get in Touch</span>
+          <img src="https://c.animaapp.com/mjshfcjfNbyuH4/img/svg-1.svg" alt="" />
+        </a>
+        </div>
+      </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <section class="footer-section" aria-labelledby="footer-about-heading">
+            <h2 id="footer-about-heading" class="visually-hidden">About TaxPro</h2>
+            <p>
+              Your trusted partner for comprehensive tax, accounting, and business consulting services. We help
+              businesses grow with expert financial guidance.
+            </p>
+            <div class="social-links">
+              <a href="#facebook" aria-label="Facebook">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-3.svg" alt="Facebook" />
+              </a>
+              <a href="#twitter" aria-label="Twitter">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link.svg" alt="Twitter" />
+              </a>
+              <a href="#linkedin" aria-label="LinkedIn">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-1.svg" alt="LinkedIn" />
+              </a>
+              <a href="#instagram" aria-label="Instagram">
+                <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/link-2.svg" alt="Instagram" />
+              </a>
+            </div>
+          </section>
+
+          <nav class="footer-section" aria-labelledby="footer-services-heading">
+            <h2 id="footer-services-heading">Our Services</h2>
+            <ul>
+              <li><a href="services.html">GST Services</a></li>
+              <li><a href="services.html">Income Tax Services</a></li>
+              <li><a href="services.html">Business Registration</a></li>
+              <li><a href="services.html">Accounting Services</a></li>
+              <li><a href="services.html">Audit Services</a></li>
+              <li><a href="services.html">Trademark Services</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-section" aria-labelledby="footer-quick-links-heading">
+            <h2 id="footer-quick-links-heading">Quick Links</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer-section" aria-labelledby="footer-contact-heading">
+            <h2 id="footer-contact-heading">Contact Us</h2>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-5.svg" alt="Address icon" />
+              <p>No,6A Co-operative Colony, Medical college road, Thanjavur</p>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-3.svg" alt="Phone icon" />
+              <a href="tel:+919677837328">+91 96778 37238</a>
+              <a href="tel:+917010808605">+91 70108 08605</a>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-4.svg" alt="Email icon" />
+              <a href="mailto:sam.gan3891@gmail.com">sam.gan3891@gmail.com</a>
+              <a href="mailto:lakshmiprabha1525@gmail.com">lakshmiprabha1525@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg.svg" alt="Hours icon" />
+              <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Branzyne. All rights reserved.</p>
+          <nav class="footer-links" aria-label="Legal links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+          </nav>
+        </div>
+      </footer>
+    
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
