@@ -11,11 +11,11 @@
     <!-- <link rel="stylesheet" href="globals.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-     <link rel="icon" type="favicon" href="assests/favicon/ChatGPT Image Jun 3, 2026, 02_59_33 PM.png">
+    <link rel="icon" type="favicon" href="assests/favicon/logo.png">
   </head>
   <script>
   const cards = document.querySelectorAll(".stat-card");
-
+   
   const animateCounter = (el) => {
     const target = +el.dataset.count;
     const suffix = el.dataset.suffix || "";
@@ -110,33 +110,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-
   <body>
     
      <header class="main-navbar1" aria-label="Main navigation">
   <div class="nav-container1">
       
     <!-- Logo (optional but recommended) -->
-    <a href="index.html" class="logo"><img src="assests/images/ChatGPT Image Jun 3, 2026, 02_59_33 PM.png" alt="logo" width="100px" height="200px"></a>
-
-    <!-- Mobile Menu Toggle -->
-    <!-- <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button> -->
+     <div class="logo-container">
+    <a href="index.html" class="logo"><img src="assests/favicon/logo.png" alt="logo" width="100px" height="100px"></a>
+    <a href="index.html" class="Logoname">Lakshmi Prabha Associates</a>  
+    </div>
+    
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span>-</span>
+      <span>-</span>
+      <span>-</span>
+    </button>
 
     <!-- Navigation Links -->
     <nav class="nav-links1">
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <!-- <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button> -->
       <a href="index.html" class="nav-link">Home</a>
-
       <a href="about.html" class="nav-link">About Us</a>
-
       <a href="services.html" class="nav-link">Services</a>
-
       <a href="contact.html" class="nav-link">Contact</a>
-
       <a href="contact.html" class="cta-btn">Get Free Consultation</a>
   </nav>
   </div>
@@ -196,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="assests/gif/computer-security.gif" alt="Animated Logo"alt="GST Services">
       <h3>GST Services</h3>
       <p>Complete GST registration, filing, and compliance services.</p>
-      <a href="#gst-services">
+      <a href="services.html">
         Learn More
         <span>→</span>
       </a>
@@ -206,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="assests/gif/gst-filing.gif" alt="Income Tax">
       <h3>Income Tax Services</h3>
       <p>Expert income tax planning and filing for individuals & businesses.</p>
-      <a href="#income-tax">
+      <a href="services.html">
         Learn More
         <span>→</span>
       </a>
@@ -216,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="assests/gif/patent.gif" alt="Business Registration">
       <h3>Business Registration</h3>
       <p>Company incorporation and all business registration services.</p>
-      <a href="#business-registration">
+      <a href="services.html">
         Learn More
         <span>→</span>
       </a>
@@ -226,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="assests/gif/license.gif" alt="Compliance">
       <h3>Licensing & Compliance</h3>
       <p>ROC compliance, statutory licenses, and regulatory management.</p>
-      <a href="#licensing">
+      <a href="services.html">
         Learn More
         <span>→</span>
       </a>
@@ -236,7 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="assests/gif/trademark.gif" alt="Trademark">
       <h3>Trademark Services</h3>
       <p>Trademark registration and intellectual property protection.</p>
-      <a href="#trademark">
+      <a href="services.html">
         Learn More
         <span>→</span>
       </a>
@@ -246,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="assests/gif/audit.gif" alt="Audit">
       <h3>Audit Services</h3>
       <p>Statutory, internal, tax & GST audits by professionals.</p>
-      <a href="#audit">
+      <a href="services.html">
         Learn More
         <span>→</span>
       </a>
@@ -356,7 +353,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <footer class="footer">
         <div class="footer-content">
           <section class="footer-section" aria-labelledby="footer-about-heading">
-            <h2 id="footer-about-heading" class="visually-hidden">About TaxPro</h2>
+            
+            <h2 id="footer-about-heading" class="visually-hidden">About Lakshmi Prabha Assocaites</h2>
+            
             <p>
               Your trusted partner for comprehensive tax, accounting, and business consulting services. We help
               businesses grow with expert financial guidance.
@@ -403,7 +402,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2 id="footer-contact-heading">Contact Us</h2>
             <div class="contact-item">
               <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-5.svg" alt="Address icon" />
-              <p>No,6A Co-operative Colony, Medical college road, Thanjavur</p>
+              <p>No,6A Co-operative Colony, Medical college road,<br> Thanjavur</p>
             </div>
             <div class="contact-item">
               <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-3.svg" alt="Phone icon" />
@@ -412,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="contact-item">
               <img src="https://c.animaapp.com/mjtncfhz5sZGrY/img/svg-4.svg" alt="Email icon" />
-              <a href="mailto:sam.gan3891@gmail.com">sam.gan3891@gmail.com</a>
+              <a href="mailto:sam.gan3891@gmail.com">sam.gan3891@gmail.com</a><br>
               <a href="mailto:lakshmiprabha1525@gmail.com">lakshmiprabha1525@gmail.com</a>
             </div>
             <div class="contact-item">
